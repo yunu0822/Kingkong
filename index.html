@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>우리집에서 뭐 먹고갈래?</title>
+
+    <style>
+
+        body {
+
+            text-align: center;
+
+            font-size: 2rem;
+
+            margin-top: 20%;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p id="message">🔮 마법의 킹콩 말하길... 🔮</p>
+
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+
+
+    <script>
+
+        function showRandomMessage() {
+
+            const messages = [
+
+                "bhc.",
+
+                "bbq",
+
+                "푸라닭",
+
+                "기영이 숯불 두마리 치킨",
+
+                "처갓집"
+
+            ];
+
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+
+        }
+
+    </script>
+
+</body>
+
+</html>
